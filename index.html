@@ -4,13 +4,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Taste the World</title>
-<link rel="icon" type="image/png" sizes="512x512" href="assets/icon-512.png">
-<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#122619">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Taste the World">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <style>
   :root{
     --cream:#faf5ec;
@@ -150,6 +143,19 @@
   }
   .note-box p{font-size:14px;margin-bottom:0}
   .note-box strong{color:var(--green)}
+
+  /* ---------- Contents ---------- */
+  .toc-hint{font-family:Georgia,serif;font-style:italic;font-size:15px;color:var(--ink-soft);margin-bottom:8px}
+  .toc-entry{
+    position:relative;z-index:51;display:flex;align-items:center;gap:12px;
+    padding:11px 4px;border-bottom:1px solid var(--rule);cursor:pointer;
+  }
+  .toc-entry .toc-text{display:flex;flex-direction:column;gap:1px;min-width:0}
+  .toc-entry .toc-name{font-family:Georgia,serif;font-size:18px;color:var(--green);line-height:1.25}
+  .toc-entry .toc-country{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+  .toc-entry .toc-page{margin-left:auto;font-size:12.5px;color:#9a8f74;letter-spacing:.06em;flex:none}
+  .toc-entry:active{background:var(--green-soft)}
+  .toc-entry:focus-visible{outline:2px solid var(--saffron);outline-offset:2px}
 
   /* ---------- Story pages ---------- */
   .fact-strip{
@@ -378,11 +384,276 @@
         </div>
       </div>
 
+      <div class="how-step">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+        </div>
+        <div>
+          <h3>Jump with Contents</h3>
+          <p>Right after this page, five Contents pages list every dish. Tap any dish name and the book jumps straight to its story.</p>
+        </div>
+      </div>
+
       <div class="note-box">
         <p><strong>Fifty dishes, fifty countries:</strong> from steamed fish parcels on the Mekong to a feast buried in the earth of the Andes &mdash; every dish a story, every recipe ready to cook at home.</p>
       </div>
     </div>
     <span class="folio">Page 2</span>
+  </section>
+
+  <!-- PAGE 3 · CONTENTS — THE AMERICAS -->
+  <section class="page" data-title="Contents — The Americas">
+    <div class="page-inner">
+      <p class="eyebrow">Contents</p>
+      <h2>The Americas</h2>
+      <div class="rule"></div>
+      <p class="toc-hint">Tap any dish to go straight to its story.</p>
+      <div class="toc-entry" data-goto="8" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Hudut</span><span class="toc-country">Belize</span></span>
+        <span class="toc-page">8</span>
+      </div>
+      <div class="toc-entry" data-goto="10" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Pepperpot</span><span class="toc-country">Guyana</span></span>
+        <span class="toc-page">10</span>
+      </div>
+      <div class="toc-entry" data-goto="12" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Sopa Paraguaya</span><span class="toc-country">Paraguay</span></span>
+        <span class="toc-page">12</span>
+      </div>
+      <div class="toc-entry" data-goto="14" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Silpancho</span><span class="toc-country">Bolivia</span></span>
+        <span class="toc-page">14</span>
+      </div>
+      <div class="toc-entry" data-goto="16" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Pom</span><span class="toc-country">Suriname</span></span>
+        <span class="toc-page">16</span>
+      </div>
+      <div class="toc-entry" data-goto="18" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Soup Joumou</span><span class="toc-country">Haiti</span></span>
+        <span class="toc-page">18</span>
+      </div>
+      <div class="toc-entry" data-goto="20" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Oil Down</span><span class="toc-country">Grenada</span></span>
+        <span class="toc-page">20</span>
+      </div>
+      <div class="toc-entry" data-goto="22" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Kak'ik</span><span class="toc-country">Guatemala</span></span>
+        <span class="toc-page">22</span>
+      </div>
+      <div class="toc-entry" data-goto="24" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Rondón</span><span class="toc-country">Nicaragua</span></span>
+        <span class="toc-page">24</span>
+      </div>
+      <div class="toc-entry" data-goto="26" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Pachamanca</span><span class="toc-country">Peru</span></span>
+        <span class="toc-page">26</span>
+      </div>
+    </div>
+    <span class="folio">Page 3</span>
+  </section>
+
+  <!-- PAGE 4 · CONTENTS — ASIA -->
+  <section class="page" data-title="Contents — Asia">
+    <div class="page-inner">
+      <p class="eyebrow">Contents</p>
+      <h2>Asia</h2>
+      <div class="rule"></div>
+      <p class="toc-hint">Tap any dish to go straight to its story.</p>
+      <div class="toc-entry" data-goto="28" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Mok Pa</span><span class="toc-country">Laos</span></span>
+        <span class="toc-page">28</span>
+      </div>
+      <div class="toc-entry" data-goto="30" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Ema Datshi</span><span class="toc-country">Bhutan</span></span>
+        <span class="toc-page">30</span>
+      </div>
+      <div class="toc-entry" data-goto="32" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Buuz</span><span class="toc-country">Mongolia</span></span>
+        <span class="toc-page">32</span>
+      </div>
+      <div class="toc-entry" data-goto="34" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Laphet Thoke</span><span class="toc-country">Myanmar</span></span>
+        <span class="toc-page">34</span>
+      </div>
+      <div class="toc-entry" data-goto="36" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Sel Roti</span><span class="toc-country">Nepal</span></span>
+        <span class="toc-page">36</span>
+      </div>
+      <div class="toc-entry" data-goto="38" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Lamprais</span><span class="toc-country">Sri Lanka</span></span>
+        <span class="toc-page">38</span>
+      </div>
+      <div class="toc-entry" data-goto="40" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Amok Trey</span><span class="toc-country">Cambodia</span></span>
+        <span class="toc-page">40</span>
+      </div>
+      <div class="toc-entry" data-goto="42" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Ambuyat</span><span class="toc-country">Brunei</span></span>
+        <span class="toc-page">42</span>
+      </div>
+      <div class="toc-entry" data-goto="44" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Batar Da'an</span><span class="toc-country">East Timor</span></span>
+        <span class="toc-page">44</span>
+      </div>
+      <div class="toc-entry" data-goto="46" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Beshbarmak</span><span class="toc-country">Kyrgyzstan</span></span>
+        <span class="toc-page">46</span>
+      </div>
+    </div>
+    <span class="folio">Page 4</span>
+  </section>
+
+  <!-- PAGE 5 · CONTENTS — AFRICA -->
+  <section class="page" data-title="Contents — Africa">
+    <div class="page-inner">
+      <p class="eyebrow">Contents</p>
+      <h2>Africa</h2>
+      <div class="rule"></div>
+      <p class="toc-hint">Tap any dish to go straight to its story.</p>
+      <div class="toc-entry" data-goto="48" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Luwombo</span><span class="toc-country">Uganda</span></span>
+        <span class="toc-page">48</span>
+      </div>
+      <div class="toc-entry" data-goto="50" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Matapa</span><span class="toc-country">Mozambique</span></span>
+        <span class="toc-page">50</span>
+      </div>
+      <div class="toc-entry" data-goto="52" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Romazava</span><span class="toc-country">Madagascar</span></span>
+        <span class="toc-page">52</span>
+      </div>
+      <div class="toc-entry" data-goto="54" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Cachupa</span><span class="toc-country">Cape Verde</span></span>
+        <span class="toc-page">54</span>
+      </div>
+      <div class="toc-entry" data-goto="56" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Liboke ya Mbisi</span><span class="toc-country">DR Congo</span></span>
+        <span class="toc-page">56</span>
+      </div>
+      <div class="toc-entry" data-goto="58" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Eru</span><span class="toc-country">Cameroon</span></span>
+        <span class="toc-page">58</span>
+      </div>
+      <div class="toc-entry" data-goto="60" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Ifisashi</span><span class="toc-country">Zambia</span></span>
+        <span class="toc-page">60</span>
+      </div>
+      <div class="toc-entry" data-goto="62" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Apraprasa</span><span class="toc-country">Ghana</span></span>
+        <span class="toc-page">62</span>
+      </div>
+      <div class="toc-entry" data-goto="64" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Dambou</span><span class="toc-country">Niger</span></span>
+        <span class="toc-page">64</span>
+      </div>
+      <div class="toc-entry" data-goto="66" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Kapana</span><span class="toc-country">Namibia</span></span>
+        <span class="toc-page">66</span>
+      </div>
+    </div>
+    <span class="folio">Page 5</span>
+  </section>
+
+  <!-- PAGE 6 · CONTENTS — EUROPE -->
+  <section class="page" data-title="Contents — Europe">
+    <div class="page-inner">
+      <p class="eyebrow">Contents</p>
+      <h2>Europe</h2>
+      <div class="rule"></div>
+      <p class="toc-hint">Tap any dish to go straight to its story.</p>
+      <div class="toc-entry" data-goto="68" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Shkmeruli</span><span class="toc-country">Georgia</span></span>
+        <span class="toc-page">68</span>
+      </div>
+      <div class="toc-entry" data-goto="70" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Ghapama</span><span class="toc-country">Armenia</span></span>
+        <span class="toc-page">70</span>
+      </div>
+      <div class="toc-entry" data-goto="72" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Tavë Kosi</span><span class="toc-country">Albania</span></span>
+        <span class="toc-page">72</span>
+      </div>
+      <div class="toc-entry" data-goto="74" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Mămăligă cu Brânză și Smântână</span><span class="toc-country">Moldova</span></span>
+        <span class="toc-page">74</span>
+      </div>
+      <div class="toc-entry" data-goto="76" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Cepelinai</span><span class="toc-country">Lithuania</span></span>
+        <span class="toc-page">76</span>
+      </div>
+      <div class="toc-entry" data-goto="78" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Ræst Kjøt</span><span class="toc-country">Faroe Islands</span></span>
+        <span class="toc-page">78</span>
+      </div>
+      <div class="toc-entry" data-goto="80" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Marmitako</span><span class="toc-country">Basque Country</span></span>
+        <span class="toc-page">80</span>
+      </div>
+      <div class="toc-entry" data-goto="82" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Porceddu</span><span class="toc-country">Sardinia</span></span>
+        <span class="toc-page">82</span>
+      </div>
+      <div class="toc-entry" data-goto="84" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Cawl</span><span class="toc-country">Wales</span></span>
+        <span class="toc-page">84</span>
+      </div>
+      <div class="toc-entry" data-goto="86" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Plokkfiskur</span><span class="toc-country">Iceland</span></span>
+        <span class="toc-page">86</span>
+      </div>
+    </div>
+    <span class="folio">Page 6</span>
+  </section>
+
+  <!-- PAGE 7 · CONTENTS — MIDDLE EAST & OCEANIA -->
+  <section class="page" data-title="Contents — Middle East & Oceania">
+    <div class="page-inner">
+      <p class="eyebrow">Contents</p>
+      <h2>Middle East & Oceania</h2>
+      <div class="rule"></div>
+      <p class="toc-hint">Tap any dish to go straight to its story.</p>
+      <div class="toc-entry" data-goto="88" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Saltah</span><span class="toc-country">Yemen</span></span>
+        <span class="toc-page">88</span>
+      </div>
+      <div class="toc-entry" data-goto="90" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Shuwa</span><span class="toc-country">Oman</span></span>
+        <span class="toc-page">90</span>
+      </div>
+      <div class="toc-entry" data-goto="92" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Shivit Oshi</span><span class="toc-country">Uzbekistan</span></span>
+        <span class="toc-page">92</span>
+      </div>
+      <div class="toc-entry" data-goto="94" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Qurutob</span><span class="toc-country">Tajikistan</span></span>
+        <span class="toc-page">94</span>
+      </div>
+      <div class="toc-entry" data-goto="96" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Dograma</span><span class="toc-country">Turkmenistan</span></span>
+        <span class="toc-page">96</span>
+      </div>
+      <div class="toc-entry" data-goto="98" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Kokoda</span><span class="toc-country">Fiji</span></span>
+        <span class="toc-page">98</span>
+      </div>
+      <div class="toc-entry" data-goto="100" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Palusami</span><span class="toc-country">Samoa</span></span>
+        <span class="toc-page">100</span>
+      </div>
+      <div class="toc-entry" data-goto="102" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Lu Pulu</span><span class="toc-country">Tonga</span></span>
+        <span class="toc-page">102</span>
+      </div>
+      <div class="toc-entry" data-goto="104" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Saksak</span><span class="toc-country">Papua New Guinea</span></span>
+        <span class="toc-page">104</span>
+      </div>
+      <div class="toc-entry" data-goto="106" tabindex="0" role="link">
+        <span class="toc-text"><span class="toc-name">Lap Lap</span><span class="toc-country">Vanuatu</span></span>
+        <span class="toc-page">106</span>
+      </div>
+    </div>
+    <span class="folio">Page 7</span>
   </section>
 
 <!-- PAGE 3 · HUDUT · STORY -->
@@ -427,7 +698,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 3</span>
+    <span class="folio">Page 8</span>
   </section>
 
   <!-- PAGE 4 · HUDUT · RECIPE -->
@@ -481,7 +752,7 @@
         <li class="sent">Serve each plantain ball in a wide bowl with the fish and a generous ladle of the coconut broth poured over the top.</li>
       </ol>
     </div>
-    <span class="folio">Page 4</span>
+    <span class="folio">Page 9</span>
   </section>
 
   <!-- PAGE 5 · PEPPERPOT · STORY -->
@@ -524,7 +795,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 5</span>
+    <span class="folio">Page 10</span>
   </section>
 
   <!-- PAGE 6 · PEPPERPOT · RECIPE -->
@@ -580,7 +851,7 @@
         <li class="sent">Rest the pot overnight if you can &mdash; pepperpot is famously better the next day. Reheat gently, fish out the whole peppers, and serve in bowls with thick slices of bread for soaking up the gravy.</li>
       </ol>
     </div>
-    <span class="folio">Page 6</span>
+    <span class="folio">Page 11</span>
   </section>
 
   <!-- PAGE 7 · SOPA PARAGUAYA · STORY -->
@@ -624,7 +895,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 7</span>
+    <span class="folio">Page 12</span>
   </section>
 
   <!-- PAGE 8 · SOPA PARAGUAYA · RECIPE -->
@@ -673,7 +944,7 @@
         <li class="sent">Rest 10 minutes, then cut into squares. Serve warm, as a side to grilled meats or on its own.</li>
       </ol>
     </div>
-    <span class="folio">Page 8</span>
+    <span class="folio">Page 13</span>
   </section>
 
   <!-- PAGE 9 · SILPANCHO · STORY -->
@@ -717,7 +988,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 9</span>
+    <span class="folio">Page 14</span>
   </section>
 
   <!-- PAGE 10 · SILPANCHO · RECIPE -->
@@ -773,7 +1044,7 @@
         <li class="sent">Build each plate in order: a bed of rice, a layer of fried potatoes, the cutlet draped across the whole plate, a fried egg on top, and a generous spoonful of sarza over the egg. Sprinkle with parsley.</li>
       </ol>
     </div>
-    <span class="folio">Page 10</span>
+    <span class="folio">Page 15</span>
   </section>
 
   <!-- PAGE 11 · POM · STORY -->
@@ -819,7 +1090,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 11</span>
+    <span class="folio">Page 16</span>
   </section>
 
   <!-- PAGE 12 · POM · RECIPE -->
@@ -877,7 +1148,7 @@
         <li class="sent">Bake 1 hour to 1 hour 15 minutes, until the top is golden brown and crisp at the edges and the chicken is cooked through. Rest 15 minutes before serving in squares, with rice or bread.</li>
       </ol>
     </div>
-    <span class="folio">Page 12</span>
+    <span class="folio">Page 17</span>
   </section>
 
   <!-- PAGE 13 · SOUP JOUMOU · STORY -->
@@ -923,7 +1194,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 13</span>
+    <span class="folio">Page 18</span>
   </section>
 
   <!-- PAGE 14 · SOUP JOUMOU · RECIPE -->
@@ -980,7 +1251,7 @@
         <li class="sent">Serve in deep bowls with lime wedges and pikliz on the side. Traditionally, the first bowl of the year is shared with neighbours.</li>
       </ol>
     </div>
-    <span class="folio">Page 14</span>
+    <span class="folio">Page 19</span>
   </section>
 
   <!-- PAGE 15 · OIL DOWN · STORY -->
@@ -1027,7 +1298,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 15</span>
+    <span class="folio">Page 20</span>
   </section>
 
   <!-- PAGE 16 · OIL DOWN · RECIPE -->
@@ -1080,7 +1351,7 @@
         <li class="sent">Serve straight from the pot, family style, with the golden gravy spooned over each portion.</li>
       </ol>
     </div>
-    <span class="folio">Page 16</span>
+    <span class="folio">Page 21</span>
   </section>
 
   <!-- PAGE 17 · KAK'IK · STORY -->
@@ -1124,7 +1395,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 17</span>
+    <span class="folio">Page 22</span>
   </section>
 
   <!-- PAGE 18 · KAK'IK · RECIPE -->
@@ -1181,7 +1452,7 @@
         <li class="sent">Serve each piece of turkey in a deep bowl with plenty of broth, rice, and a small tamale on the side. Pass the crushed cobanero for those who want more heat.</li>
       </ol>
     </div>
-    <span class="folio">Page 18</span>
+    <span class="folio">Page 23</span>
   </section>
 
   <!-- PAGE 19 · RONDÓN · STORY -->
@@ -1226,7 +1497,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 19</span>
+    <span class="folio">Page 24</span>
   </section>
 
   <!-- PAGE 20 · RONDÓN · RECIPE -->
@@ -1284,7 +1555,7 @@
         <li class="sent">Remove the Scotch bonnet, taste for salt, and serve in deep bowls with pan de coco for soaking up the broth.</li>
       </ol>
     </div>
-    <span class="folio">Page 20</span>
+    <span class="folio">Page 25</span>
   </section>
 
   <!-- PAGE 21 · PACHAMANCA · STORY -->
@@ -1330,7 +1601,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 21</span>
+    <span class="folio">Page 26</span>
   </section>
 
   <!-- PAGE 22 · PACHAMANCA · RECIPE -->
@@ -1378,7 +1649,7 @@
         <li class="sent">Roast 1 hour 45 minutes, until the meats are tender and the potatoes are soft. Rest 10 minutes, then open the parcel at the table &mdash; the rush of fragrant steam is part of the ceremony &mdash; and serve family style, with the meats, tubers, and corn piled on platters.</li>
       </ol>
     </div>
-    <span class="folio">Page 22</span>
+    <span class="folio">Page 27</span>
   </section>
 
   <section class="page" data-title="Mok Pa — The Story">
@@ -1424,7 +1695,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 23</span>
+    <span class="folio">Page 28</span>
   </section>
 
   <section class="page" data-title="Mok Pa — The Recipe">
@@ -1476,7 +1747,7 @@
         <li class="sent">Serve the parcels unopened on a platter with a bowl of sticky rice. Each person opens their own parcel at the table.</li>
       </ol>
     </div>
-    <span class="folio">Page 24</span>
+    <span class="folio">Page 29</span>
   </section>
 
   <section class="page" data-title="Ema Datshi — The Story">
@@ -1521,7 +1792,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 25</span>
+    <span class="folio">Page 30</span>
   </section>
 
   <section class="page" data-title="Ema Datshi — The Recipe">
@@ -1568,7 +1839,7 @@
         <li class="sent">Serve hot in a bowl with red rice. Warn your guests: the chillies are the meal, not a garnish.</li>
       </ol>
     </div>
-    <span class="folio">Page 26</span>
+    <span class="folio">Page 31</span>
   </section>
 
   <section class="page" data-title="Buuz — The Story">
@@ -1613,7 +1884,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 27</span>
+    <span class="folio">Page 32</span>
   </section>
 
   <section class="page" data-title="Buuz — The Recipe">
@@ -1662,7 +1933,7 @@
         <li class="sent">Serve hot, by the plateful, with hot milk tea. Eat with your hands.</li>
       </ol>
     </div>
-    <span class="folio">Page 28</span>
+    <span class="folio">Page 33</span>
   </section>
 
   <section class="page" data-title="Laphet Thoke — The Story">
@@ -1708,7 +1979,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 29</span>
+    <span class="folio">Page 34</span>
   </section>
 
   <section class="page" data-title="Laphet Thoke — The Recipe">
@@ -1759,7 +2030,7 @@
         <li class="sent">Serve immediately as a shared side dish or snack, with the crunchy toppings still crisp. In Myanmar it is put in the centre of the table for everyone to share.</li>
       </ol>
     </div>
-    <span class="folio">Page 30</span>
+    <span class="folio">Page 35</span>
   </section>
 
   <section class="page" data-title="Sel Roti — The Story">
@@ -1805,7 +2076,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 31</span>
+    <span class="folio">Page 36</span>
   </section>
 
   <section class="page" data-title="Sel Roti — The Recipe">
@@ -1855,7 +2126,7 @@
         <li class="sent">Drain on paper towels. Serve warm, on their own or with spicy potato curry.</li>
       </ol>
     </div>
-    <span class="folio">Page 32</span>
+    <span class="folio">Page 37</span>
   </section>
 
   <section class="page" data-title="Lamprais — The Story">
@@ -1901,7 +2172,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 33</span>
+    <span class="folio">Page 38</span>
   </section>
 
   <section class="page" data-title="Lamprais — The Recipe">
@@ -1965,7 +2236,7 @@
         <li class="sent">Serve each person their own parcel, unopened. Open at the table and eat with your hands, mixing everything together.</li>
       </ol>
     </div>
-    <span class="folio">Page 34</span>
+    <span class="folio">Page 39</span>
   </section>
 
   <section class="page" data-title="Amok Trey — The Story">
@@ -2011,7 +2282,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 35</span>
+    <span class="folio">Page 40</span>
   </section>
 
   <section class="page" data-title="Amok Trey — The Recipe">
@@ -2065,7 +2336,7 @@
         <li class="sent">Garnish with a spoonful of coconut cream, sliced lime leaves and red chilli. Serve hot with jasmine rice.</li>
       </ol>
     </div>
-    <span class="folio">Page 36</span>
+    <span class="folio">Page 41</span>
   </section>
 
   <section class="page" data-title="Ambuyat — The Story">
@@ -2111,7 +2382,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 37</span>
+    <span class="folio">Page 42</span>
   </section>
 
   <section class="page" data-title="Ambuyat — The Recipe">
@@ -2159,7 +2430,7 @@
         <li class="sent"><strong>Eat:</strong> Twirl a small amount of ambuyat around the sticks, dip it generously in the cacah, and swallow &mdash; traditionally without chewing. The flavour is all in the sauce.</li>
       </ol>
     </div>
-    <span class="folio">Page 38</span>
+    <span class="folio">Page 43</span>
   </section>
 
   <section class="page" data-title="Batar Da'an — The Story">
@@ -2205,7 +2476,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 39</span>
+    <span class="folio">Page 44</span>
   </section>
 
   <section class="page" data-title="Batar Da'an — The Recipe">
@@ -2254,7 +2525,7 @@
         <li class="sent">Season with salt and pepper. Serve hot as a main course with rice, or as a side dish beside grilled fish or meat.</li>
       </ol>
     </div>
-    <span class="folio">Page 40</span>
+    <span class="folio">Page 45</span>
   </section>
 
   <section class="page" data-title="Beshbarmak — The Story">
@@ -2299,7 +2570,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 41</span>
+    <span class="folio">Page 46</span>
   </section>
 
   <section class="page" data-title="Beshbarmak — The Recipe">
@@ -2353,7 +2624,7 @@
         <li class="sent">Pile the meat over the noodles, spoon the softened onions and a little broth over the top, and serve the remaining broth in small bowls alongside. Eat from the shared platter, with your hands if you like &mdash; that is the tradition.</li>
       </ol>
     </div>
-    <span class="folio">Page 42</span>
+    <span class="folio">Page 47</span>
   </section>
 
 <!-- PAGE 43 · LUWOMBO · STORY -->
@@ -2397,7 +2668,7 @@
       <p class="fine">General food information, not medical advice.</p>
     </div>
   </div>
-  <span class="folio">Page 43</span>
+  <span class="folio">Page 48</span>
 </section>
 
 <!-- PAGE 44 · LUWOMBO · RECIPE -->
@@ -2446,7 +2717,7 @@
       <li class="sent">Serve the parcel unopened at the table &mdash; each person unwraps their own &mdash; with matooke, steamed rice or sweet potatoes.</li>
     </ol>
   </div>
-  <span class="folio">Page 44</span>
+  <span class="folio">Page 49</span>
 </section>
 
 <!-- PAGE 45 · MATAPA · STORY -->
@@ -2490,7 +2761,7 @@
       <p class="fine">General food information, not medical advice.</p>
     </div>
   </div>
-  <span class="folio">Page 45</span>
+  <span class="folio">Page 50</span>
 </section>
 
 <!-- PAGE 46 · MATAPA · RECIPE -->
@@ -2539,7 +2810,7 @@
       <li class="sent">Season with salt and serve hot with white rice or xima.</li>
     </ol>
   </div>
-  <span class="folio">Page 46</span>
+  <span class="folio">Page 51</span>
 </section>
 
 <!-- PAGE 47 · ROMAZAVA · STORY -->
@@ -2583,7 +2854,7 @@
       <p class="fine">General food information, not medical advice.</p>
     </div>
   </div>
-  <span class="folio">Page 47</span>
+  <span class="folio">Page 52</span>
 </section>
 
 <!-- PAGE 48 · ROMAZAVA · RECIPE -->
@@ -2632,7 +2903,7 @@
       <li class="sent">Ladle generously over mounds of plain white rice, with chili sauce on the side.</li>
     </ol>
   </div>
-  <span class="folio">Page 48</span>
+  <span class="folio">Page 53</span>
 </section>
 
 <!-- PAGE 49 · CACHUPA · STORY -->
@@ -2677,7 +2948,7 @@
       <p class="fine">General food information, not medical advice.</p>
     </div>
   </div>
-  <span class="folio">Page 49</span>
+  <span class="folio">Page 54</span>
 </section>
 
 <!-- PAGE 50 · CACHUPA · RECIPE -->
@@ -2730,7 +3001,7 @@
       <li class="sent">Serve hot in deep bowls. The next morning, any leftovers can be pan-fried as cachupa refogada and served with a fried egg.</li>
     </ol>
   </div>
-  <span class="folio">Page 50</span>
+  <span class="folio">Page 55</span>
 </section>
 
 <!-- PAGE 51 · LIBOKE YA MBISI · STORY -->
@@ -2773,7 +3044,7 @@
       <p class="fine">General food information, not medical advice.</p>
     </div>
   </div>
-  <span class="folio">Page 51</span>
+  <span class="folio">Page 56</span>
 </section>
 
 <!-- PAGE 52 · LIBOKE YA MBISI · RECIPE -->
@@ -2822,7 +3093,7 @@
       <li class="sent">Serve the parcel unopened &mdash; each person opens their own &mdash; with rice, fufu or plantains.</li>
     </ol>
   </div>
-  <span class="folio">Page 52</span>
+  <span class="folio">Page 57</span>
 </section>
 
 <!-- PAGE 53 · ERU · STORY -->
@@ -2867,7 +3138,7 @@
       <p class="fine">General food information, not medical advice.</p>
     </div>
   </div>
-  <span class="folio">Page 53</span>
+  <span class="folio">Page 58</span>
 </section>
 
 <!-- PAGE 54 · ERU · RECIPE -->
@@ -2917,7 +3188,7 @@
       <li class="sent">Serve hot with water fufu or garri, torn into pieces by hand for scooping.</li>
     </ol>
   </div>
-  <span class="folio">Page 54</span>
+  <span class="folio">Page 59</span>
 </section>
 
 <!-- PAGE 55 · IFISASHI · STORY -->
@@ -2959,7 +3230,7 @@
       <p class="fine">General food information, not medical advice.</p>
     </div>
   </div>
-  <span class="folio">Page 55</span>
+  <span class="folio">Page 60</span>
 </section>
 
 <!-- PAGE 56 · IFISASHI · RECIPE -->
@@ -3006,7 +3277,7 @@
       <li class="sent">Serve hot with nshima or rice, eaten by hand.</li>
     </ol>
   </div>
-  <span class="folio">Page 56</span>
+  <span class="folio">Page 61</span>
 </section>
 
 <!-- PAGE 57 · APRAPRASA · STORY -->
@@ -3050,7 +3321,7 @@
       <p class="fine">General food information, not medical advice.</p>
     </div>
   </div>
-  <span class="folio">Page 57</span>
+  <span class="folio">Page 62</span>
 </section>
 
 <!-- PAGE 58 · APRAPRASA · RECIPE -->
@@ -3098,7 +3369,7 @@
       <li class="sent">Mould the paste onto a plate or banana leaf. Top with the crabs and fish from the soup, spoon over extra soup, and add the beans and boiled egg if using. Serve warm, eaten by hand or with a spoon.</li>
     </ol>
   </div>
-  <span class="folio">Page 58</span>
+  <span class="folio">Page 63</span>
 </section>
 
 <!-- PAGE 59 · DAMBOU · STORY -->
@@ -3141,7 +3412,7 @@
       <p class="fine">General food information, not medical advice.</p>
     </div>
   </div>
-  <span class="folio">Page 59</span>
+  <span class="folio">Page 64</span>
 </section>
 
 <!-- PAGE 60 · DAMBOU · RECIPE -->
@@ -3188,7 +3459,7 @@
       <li class="sent">Serve warm from a communal bowl, with grilled meat or fish on the side if you like.</li>
     </ol>
   </div>
-  <span class="folio">Page 60</span>
+  <span class="folio">Page 65</span>
 </section>
 
 <!-- PAGE 61 · KAPANA · STORY -->
@@ -3232,7 +3503,7 @@
       <p class="fine">General food information, not medical advice.</p>
     </div>
   </div>
-  <span class="folio">Page 61</span>
+  <span class="folio">Page 66</span>
 </section>
 
 <!-- PAGE 62 · KAPANA · RECIPE -->
@@ -3275,7 +3546,7 @@
       <li class="sent">Slice the grilled meat into bite-size strips. Serve immediately, straight off the grill, with the tomato-onion relish and bread rolls. Eat by hand.</li>
     </ol>
   </div>
-  <span class="folio">Page 62</span>
+  <span class="folio">Page 67</span>
 </section>
 
 <!-- PAGE 63 · SHKMERULI · STORY -->
@@ -3319,7 +3590,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 63</span>
+    <span class="folio">Page 68</span>
   </section>
 
   <!-- PAGE 64 · SHKMERULI · RECIPE -->
@@ -3367,7 +3638,7 @@
         <li class="sent">Sprinkle with red pepper flakes and cilantro. Serve straight from the pan, still bubbling, with crusty bread to mop up the sauce.</li>
       </ol>
     </div>
-    <span class="folio">Page 64</span>
+    <span class="folio">Page 69</span>
   </section>
 
   <!-- PAGE 65 · GHAPAMA · STORY -->
@@ -3412,7 +3683,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 65</span>
+    <span class="folio">Page 70</span>
   </section>
 
   <!-- PAGE 66 · GHAPAMA · RECIPE -->
@@ -3463,7 +3734,7 @@
         <li class="sent">Bring the whole pumpkin to the table. Cut it open in front of your guests, slicing down from the top so the wedges fall outward around the golden rice, like petals. Serve warm, scooping pumpkin flesh with the filling.</li>
       </ol>
     </div>
-    <span class="folio">Page 66</span>
+    <span class="folio">Page 71</span>
   </section>
 
   <!-- PAGE 67 · TAVË KOSI · STORY -->
@@ -3507,7 +3778,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 67</span>
+    <span class="folio">Page 72</span>
   </section>
 
   <!-- PAGE 68 · TAVË KOSI · RECIPE -->
@@ -3559,7 +3830,7 @@
         <li class="sent">Rest for 10 minutes before serving. Spoon out at the table with crusty bread.</li>
       </ol>
     </div>
-    <span class="folio">Page 68</span>
+    <span class="folio">Page 73</span>
   </section>
 
   <!-- PAGE 69 · MĂMĂLIGĂ · STORY -->
@@ -3601,7 +3872,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 69</span>
+    <span class="folio">Page 74</span>
   </section>
 
   <!-- PAGE 70 · MĂMĂLIGĂ · RECIPE -->
@@ -3648,7 +3919,7 @@
         <li class="sent">Cut slices with a piece of kitchen thread pulled taut, or a wet knife. Serve hot, layered and topped with crumbled cheese, sour cream, cracklings if using, and a fried egg.</li>
       </ol>
     </div>
-    <span class="folio">Page 70</span>
+    <span class="folio">Page 75</span>
   </section>
 
   <!-- PAGE 71 · CEPELINAI · STORY -->
@@ -3691,7 +3962,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 71</span>
+    <span class="folio">Page 76</span>
   </section>
 
   <!-- PAGE 72 · CEPELINAI · RECIPE -->
@@ -3747,7 +4018,7 @@
         <li class="sent">Lift the dumplings out with a slotted spoon, plate two per person, spoon the hot spirgai and its fat over them, and add a generous dollop of cold sour cream.</li>
       </ol>
     </div>
-    <span class="folio">Page 72</span>
+    <span class="folio">Page 77</span>
   </section>
 
   <!-- PAGE 73 · RÆST KJØT · STORY -->
@@ -3792,7 +4063,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 73</span>
+    <span class="folio">Page 78</span>
   </section>
 
   <!-- PAGE 74 · RÆST KJØT · RECIPE -->
@@ -3835,7 +4106,7 @@
         <li class="sent">Lift the meat from the pot and slice it thickly. Serve hot with the boiled potatoes, butter, and a little of the cooking broth spooned over. Season lightly &mdash; the meat is already deeply flavoured. Sprinkle with chives or parsley if you like.</li>
       </ol>
     </div>
-    <span class="folio">Page 74</span>
+    <span class="folio">Page 79</span>
   </section>
 
   <!-- PAGE 75 · MARMITAKO · STORY -->
@@ -3879,7 +4150,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 75</span>
+    <span class="folio">Page 80</span>
   </section>
 
   <!-- PAGE 76 · MARMITAKO · RECIPE -->
@@ -3931,7 +4202,7 @@
         <li class="sent">Rest for 5 minutes, sprinkle with parsley, and serve in deep bowls with crusty bread.</li>
       </ol>
     </div>
-    <span class="folio">Page 76</span>
+    <span class="folio">Page 81</span>
   </section>
 
   <!-- PAGE 77 · PORCEDDU · STORY -->
@@ -3978,7 +4249,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 77</span>
+    <span class="folio">Page 82</span>
   </section>
 
   <!-- PAGE 78 · PORCEDDU · RECIPE -->
@@ -4024,7 +4295,7 @@
         <li class="sent">Rest the pig for 20 minutes on a bed of the remaining fresh myrtle sprigs, so the perfume rises into the meat. Carve at the table and serve with pane carasau.</li>
       </ol>
     </div>
-    <span class="folio">Page 78</span>
+    <span class="folio">Page 83</span>
   </section>
 
   <!-- PAGE 79 · CAWL · STORY -->
@@ -4071,7 +4342,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 79</span>
+    <span class="folio">Page 84</span>
   </section>
 
   <!-- PAGE 80 · CAWL · RECIPE -->
@@ -4124,7 +4395,7 @@
         <li class="sent">Serve the traditional way: ladle the broth into bowls first, then serve the meat and vegetables on plates, with crusty bread, cheese and parsley.</li>
       </ol>
     </div>
-    <span class="folio">Page 80</span>
+    <span class="folio">Page 85</span>
   </section>
 
   <!-- PAGE 81 · PLOKKFISKUR · STORY -->
@@ -4167,7 +4438,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 81</span>
+    <span class="folio">Page 86</span>
   </section>
 
   <!-- PAGE 82 · PLOKKFISKUR · RECIPE -->
@@ -4217,7 +4488,7 @@
         <li class="sent">Serve immediately in deep bowls, sprinkled with chives or parsley, with thick slices of dark rye bread and cold butter.</li>
       </ol>
     </div>
-    <span class="folio">Page 82</span>
+    <span class="folio">Page 87</span>
   </section>
 
   <!-- PAGE 83 · SALTAH · STORY -->
@@ -4262,7 +4533,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 83</span>
+    <span class="folio">Page 88</span>
   </section>
 
   <!-- PAGE 84 · SALTAH · RECIPE -->
@@ -4325,7 +4596,7 @@
         <li class="sent">Serve immediately, bubbling hot, with torn flatbread for scooping.</li>
       </ol>
     </div>
-    <span class="folio">Page 84</span>
+    <span class="folio">Page 89</span>
   </section>
 
   <!-- PAGE 85 · SHUWA · STORY -->
@@ -4370,7 +4641,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 85</span>
+    <span class="folio">Page 90</span>
   </section>
 
   <!-- PAGE 86 · SHUWA · RECIPE -->
@@ -4426,7 +4697,7 @@
         <li class="sent">Serve with saffron rice and a simple salad.</li>
       </ol>
     </div>
-    <span class="folio">Page 86</span>
+    <span class="folio">Page 91</span>
   </section>
 
   <!-- PAGE 87 · SHIVIT OSHI · STORY -->
@@ -4471,7 +4742,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 87</span>
+    <span class="folio">Page 92</span>
   </section>
 
   <!-- PAGE 88 · SHIVIT OSHI · RECIPE -->
@@ -4531,7 +4802,7 @@
         <li class="sent">Pile the green noodles in wide bowls, ladle the hot vaju over the top, and finish each bowl with a generous spoonful of cold yogurt. Garnish with fresh dill and serve at once.</li>
       </ol>
     </div>
-    <span class="folio">Page 88</span>
+    <span class="folio">Page 93</span>
   </section>
 
   <!-- PAGE 89 · QURUTOB · STORY -->
@@ -4576,7 +4847,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 89</span>
+    <span class="folio">Page 94</span>
   </section>
 
   <!-- PAGE 90 · QURUTOB · RECIPE -->
@@ -4629,7 +4900,7 @@
         <li class="sent">Serve at once, from the shared platter, with green tea.</li>
       </ol>
     </div>
-    <span class="folio">Page 90</span>
+    <span class="folio">Page 95</span>
   </section>
 
   <!-- PAGE 91 · DOGRAMA · STORY -->
@@ -4677,7 +4948,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 91</span>
+    <span class="folio">Page 96</span>
   </section>
 
   <!-- PAGE 92 · DOGRAMA · RECIPE -->
@@ -4725,7 +4996,7 @@
         <li class="sent">Scoop the mixture into deep bowls, ladle over plenty of steaming broth, and finish with black pepper. Serve at once, with wooden spoons. Traditionally, guests take home a small packet of the dry mixture.</li>
       </ol>
     </div>
-    <span class="folio">Page 92</span>
+    <span class="folio">Page 97</span>
   </section>
 
   <!-- PAGE 93 · KOKODA · STORY -->
@@ -4769,7 +5040,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 93</span>
+    <span class="folio">Page 98</span>
   </section>
 
   <!-- PAGE 94 · KOKODA · RECIPE -->
@@ -4820,7 +5091,7 @@
         <li class="sent">Chill for at least 30 minutes. Serve cold, in coconut shells or a chilled bowl, with lime wedges.</li>
       </ol>
     </div>
-    <span class="folio">Page 94</span>
+    <span class="folio">Page 99</span>
   </section>
 
   <!-- PAGE 95 · PALUSAMI · STORY -->
@@ -4864,7 +5135,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 95</span>
+    <span class="folio">Page 100</span>
   </section>
 
   <!-- PAGE 96 · PALUSAMI · RECIPE -->
@@ -4911,7 +5182,7 @@
         <li class="sent">Serve hot, unwrapped at the table, with taro or breadfruit.</li>
       </ol>
     </div>
-    <span class="folio">Page 96</span>
+    <span class="folio">Page 101</span>
   </section>
 
   <!-- PAGE 97 · LU PULU · STORY -->
@@ -4956,7 +5227,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 97</span>
+    <span class="folio">Page 102</span>
   </section>
 
   <!-- PAGE 98 · LU PULU · RECIPE -->
@@ -5003,7 +5274,7 @@
         <li class="sent">Serve hot, unwrapped at the table, with steamed taro or yam.</li>
       </ol>
     </div>
-    <span class="folio">Page 98</span>
+    <span class="folio">Page 103</span>
   </section>
 
   <!-- PAGE 99 · SAKSAK · STORY -->
@@ -5047,7 +5318,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 99</span>
+    <span class="folio">Page 104</span>
   </section>
 
   <!-- PAGE 100 · SAKSAK · RECIPE -->
@@ -5093,7 +5364,7 @@
         <li class="sent">Warm the coconut milk gently (do not boil it). Unwrap the dumplings into bowls and pour the warm coconut milk over them. Serve warm.</li>
       </ol>
     </div>
-    <span class="folio">Page 100</span>
+    <span class="folio">Page 105</span>
   </section>
 
   <!-- PAGE 101 · LAP LAP · STORY -->
@@ -5138,7 +5409,7 @@
         <p class="fine">General food information, not medical advice.</p>
       </div>
     </div>
-    <span class="folio">Page 101</span>
+    <span class="folio">Page 106</span>
   </section>
 
   <!-- PAGE 102 · LAP LAP · RECIPE -->
@@ -5188,7 +5459,7 @@
         <li class="sent">Unwrap at the table, pour the remaining coconut milk over the top, and serve hot, cut into slices.</li>
       </ol>
     </div>
-    <span class="folio">Page 102</span>
+    <span class="folio">Page 107</span>
   </section>
 
   <!-- PAGE 103 · BACK -->
@@ -5219,7 +5490,7 @@
   <button class="nav-btn" id="prevBtn" aria-label="Previous page">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
   </button>
-  <span id="counter">Page 1 of 103</span>
+  <span id="counter">Page 1 of 108</span>
   <button class="nav-btn" id="nextBtn" aria-label="Next page">
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
   </button>
@@ -5279,6 +5550,27 @@
       update();
     }, 560);
   }
+
+  function goToPage(n){
+    var idx = n - 1;
+    if (busy || idx < 0 || idx >= total || idx === current) return;
+    pages[current].classList.remove('active');
+    pages[idx].classList.add('active');
+    current = idx;
+    update();
+  }
+
+  /* Contents jump: tap (or Enter on) a dish name to go straight to its story. */
+  document.getElementById('book').addEventListener('click', function(e){
+    var t = e.target && e.target.closest ? e.target.closest('[data-goto]') : null;
+    if (t) goToPage(parseInt(t.getAttribute('data-goto'), 10));
+  });
+  document.getElementById('book').addEventListener('keydown', function(e){
+    if ((e.key === 'Enter' || e.key === ' ') && e.target && e.target.getAttribute && e.target.getAttribute('data-goto')){
+      e.preventDefault();
+      goToPage(parseInt(e.target.getAttribute('data-goto'), 10));
+    }
+  });
 
   prevBtn.addEventListener('click', goPrev);
   nextBtn.addEventListener('click', goNext);
@@ -5421,10 +5713,16 @@
   var els = document.querySelectorAll('.people-photo');
   for (var i = 0; i < els.length; i++) photos[els[i].getAttribute('data-region')] = els[i];
   function regionFor(page){
-    if (page <= 22) return 'americas';
-    if (page <= 42) return 'asia';
-    if (page <= 62) return 'africa';
-    if (page <= 82) return 'europe';
+    /* Contents pages (3-7) show their own region's people photo. */
+    if (page === 3) return 'americas';
+    if (page === 4) return 'asia';
+    if (page === 5) return 'africa';
+    if (page === 6) return 'europe';
+    if (page === 7) return 'middle-east-oceania';
+    if (page <= 27) return 'americas';
+    if (page <= 47) return 'asia';
+    if (page <= 67) return 'africa';
+    if (page <= 87) return 'europe';
     return 'middle-east-oceania';
   }
   function setRegion(region){
